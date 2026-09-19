@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern & Professional Website</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- GOOGLE ANALYTICS (Replace YOUR_GA_MEASUREMENT_ID with your actual GA4 ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'YOUR_GA_MEASUREMENT_ID');
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+  <!-- Header / Navigation -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">P</div>
+        <span class="font-bold text-xl text-gray-900">ProLaunch</span>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-8 text-sm font-medium">
+        <a href="#features" class="text-gray-600 hover:text-indigo-600 transition">Features</a>
+        <a href="#about" class="text-gray-600 hover:text-indigo-600 transition">About</a>
+        <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition">Contact</a>
+      </nav>
+
+      <a href="#contact" class="hidden md:inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition">
+        Get Started
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-br from-indigo-50 to-white border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight">
+        Build Your Digital Presence <br><span class="text-indigo-600">Fast & Efficiently</span>
+      </h1>
+      <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+        Deliver seamless experiences to your users with responsive, optimized designs built for high conversion and modern security standards.
+      </p>
+      <div class="mt-8 flex justify-center gap-4">
+        <a href="#contact" class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 shadow-md transition">Get in Touch</a>
+        <a href="#features" class="px-6 py-3 bg-white text-gray-700 font-medium rounded-lg border border-gray-300 hover:bg-gray-50 transition">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="features" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900">Designed for Impact</h2>
+        <p class="text-gray-600 mt-2">Everything you need to deliver high-quality web experiences.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+            <i class="fas me-0 fa-bolt"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">High Performance</h3>
+          <p class="text-gray-600 text-sm">Lightweight code ensures rapid page load speeds across all screen sizes and mobile networks.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Secure & Reliable</h3>
+          <p class="text-gray-600 text-sm">Follows industry standards for data handling, compliance, and SSL encryption compatibility.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Analytics Ready</h3>
+          <p class="text-gray-600 text-sm">Track real-time traffic statistics and capture incoming contact leads effortlessly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Capture / Contact Section -->
+  <section id="contact" class="py-16 bg-white border-t border-gray-100">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold text-gray-900">Connect With Us</h2>
+        <p class="text-gray-600 mt-2">Fill out the form below and we will get back to you shortly.</p>
+      </div>
+
+      <form id="leadForm" class="space-y-4 bg-gray-50 p-6 sm:p-8 rounded-2xl border border-gray-200">
+        <div>
+          <label for="fullName" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+          <input type="text" id="fullName" required placeholder="John Doe" 
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+        </div>
+
+        <div>
+          <label for="phoneNumber" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+          <input type="tel" id="phoneNumber" required placeholder="+1 (555) 000-0000" 
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+          <input type="email" id="email" required placeholder="john@example.com" 
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+        </div>
+
+        <button type="submit" class="w-full py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition">
+          Submit Information
+        </button>
+
+        <p id="formStatus" class="hidden text-center text-sm font-medium text-green-600 mt-2">
+          Thank you! Your information has been received.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+    <p>&copy; 2026 ProLaunch. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Lead Form Handling Script
+    document.getElementById('leadForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('fullName').value;
+      const phone = document.getElementById('phoneNumber').value;
+      const email = document.getElementById('email').value;
+
+      console.log('Lead Captured:', { name, phone, email });
+
+      // Show confirmation message
+      const status = document.getElementById('formStatus');
+      status.classList.remove('hidden');
+
+      // Reset form
+      this.reset();
+    });
+  </script>
+</body>
+</html>
